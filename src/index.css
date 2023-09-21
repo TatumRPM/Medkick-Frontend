@@ -1,0 +1,347 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #F7F9F8;
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    /* Remove default arrow */
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #DBDADD;
+  font-size: 14px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.roundButton{
+    border-radius: 100px;
+      border: 1px solid #7D9FEF;
+      padding: 0px 30px;
+      font-size: 1em;
+      font-weight: 500;
+      font-family: inherit;
+      /* background-color: #646cff; */
+      background-color: #FFF;
+      color: black;
+      cursor: pointer;
+      transition: border-color 0.25s;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      margin-right: 10px;
+}
+
+
+select::-ms-expand {
+  display: none;
+  /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: url(../src/assets/Expand.png);
+  top: 37px;
+  right: 26px;
+  position: absolute;
+}
+
+.select-wrapper1 {
+  position: relative;
+}
+
+.select-wrapper1::after {
+  content: url(../src/assets/Expand.png);
+  top: 17px;
+  right: 30px;
+  position: absolute;
+}
+
+.select-wrapper2 {
+  position: relative;
+}
+
+.select-wrapper2::after {
+  content: url(../src/assets/Expand.png);
+  top: 6px;
+  right: 40px;
+  position: absolute;
+}
+
+
+.select-wrapper3 {
+  position: relative;
+}
+
+.select-wrapper3::after {
+  content: url(../src/assets/Expand.png);
+  top: 8px;
+  right: 15px;
+  position: absolute;
+}
+
+input{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+input:focus{
+  border: none;
+  background: none;
+  outline: none;
+}
+
+div{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+textarea{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+span{
+  margin: 0;
+  padding: 0;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.primaryButton{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #646cff; */
+  background-color: #7D9FEF;
+  color: #FFF;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+
+.primaryButton:hover {
+  border-color: #646cff;
+  background-color: #646cff;
+}
+.primaryButton:focus,
+.primaryButton:focus-visible {
+  background-color: #646cff;
+}
+
+.rowContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.secondaryButton {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #646cff; */
+  background-color: #FFF;
+  color: #7D9FEF;
+  cursor: pointer;
+  border: 1px solid #E0E1E2;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+
+.checkbox-wrapper input[type="checkbox"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 3px solid #DBDADD;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-popUp input[type="checkbox"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-label{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 50px;
+}
+
+input.checked {
+  background-color: #7D9FEF;
+  position: relative;
+}
+
+input.checked::before {
+  content: "\2714";
+  font-size: 12px;
+  color: #fff;
+  background-color: #7D9FEF;
+  position: absolute;
+  left: 25%;
+  /* bottom: 0.1px; */
+  /* right: 1px; */
+  /* top: -5px; */
+}
+
+input.unCheckedPopUp{
+  background-color: #fff;
+}
+
+
+input.checkedPopUp {
+  position: relative;
+}
+
+input.checkedPopUp::before {
+  content: "\2714";
+  font-size: 11px;
+  color: #000;
+  position: absolute;
+  left: 20%;
+  /* bottom: 0.01px; */
+  /* right: 1px; */
+  /* top: -5px; */
+}
+
+input.unCheckedPopUp {
+  background-color: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
